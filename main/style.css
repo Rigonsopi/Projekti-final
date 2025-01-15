@@ -8,7 +8,7 @@ body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
     color: grey;
-    font-family: 'Poppins', sans-serif; /* Corrected font-family syntax */
+    font-family: 'Poppins', sans-serif; 
 }
 
 h2 {
@@ -27,7 +27,7 @@ h4 {
     margin-bottom: 30px;
 }
 
-.form-control { /* Fixed typo 'form-contol' */
+.form-control { 
     border-radius: 30px;
 }
 
@@ -56,7 +56,7 @@ h4 {
     font-size: 50px;
 }
 
-.logo { /* Fixed typo from '.log' to '.logo' */
+.logo { 
     color: #2b2c3c;
     font-size: 200px;
 }
@@ -109,7 +109,7 @@ h4 {
 }
 
 .panel-footer .btn:hover {
-    border-color: #2b2c3c; /* Fixed invalid syntax */
+    border-color: #2b2c3c;
     background-color: #fff !important;
     color: #2b2c3c;
 }
@@ -121,7 +121,7 @@ h4 {
     border-bottom: 1px solid transparent;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px; /* Removed redundant border-bottom-left-radius */
+    border-bottom-right-radius: 0px; 
 }
 
 .panel-footer {
@@ -144,7 +144,7 @@ h4 {
 }
 
 .navbar {
-    margin-bottom: 0; /* Fixed typo 'o' to '0' */
+    margin-bottom: 0; 
     background-color: #2b2c3c;
     z-index: 9999;
     border: 0;
@@ -159,7 +159,7 @@ h4 {
     color: #fff !important;
 }
 
-.navbar-nav li a:hover, .navbar-nav li.active a { /* Fixed typo 'novbar-nav' to 'navbar-nav' */
+.navbar-nav li a:hover, .navbar-nav li.active a { 
     color: #2b2c3c;
     background-color: #fff !important;
 }
@@ -184,7 +184,7 @@ footer .glyphicon {
     -webkit-animation-name: slide;
     animation-duration: 1s;
     -webkit-animation-duration: 1s;
-    animation-direction: normal; /* Correcting invalid direction */
+    animation-direction: normal; 
     visibility: visible;
 }
 
@@ -212,7 +212,7 @@ footer .glyphicon {
 
 @media screen and (max-width: 768px) {
     .col-sm-4 {
-        text-align: center; /* Fixed typo from 'text-alingn' to 'text-align' */
+        text-align: center;
         margin: 25px 0;
     }
     .btn-lg {
@@ -223,6 +223,6 @@ footer .glyphicon {
 
 @media screen and (max-width: 480px) {
     .logo {
-        font-size: 150px; /* Fixed typo '.log' to '.logo' */
+        font-size: 150px;
     }
 }

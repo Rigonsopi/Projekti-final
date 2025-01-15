@@ -1,6 +1,6 @@
 body {
     height: 100vh;
-    width: 100vw; /* Changed from 100vh to 100vw to ensure full width */
+    width: 100vw; 
     background-image: linear-gradient(to bottom right, rgb(31, 37, 49), rgb(92, 92, 119));
     margin: 0;
     overflow: hidden;
@@ -12,7 +12,7 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); /* Adjusted translation to center */
+    transform: translate(-50%, -50%); 
     user-select: none;
 }
 
@@ -20,10 +20,10 @@ body {
     width: 40vmin;
     height: 56vmin;
     object-fit: cover;
-    object-position: center; /* Fixed incorrect value */
+    object-position: center;
 }
 
-body.menu-toggled > .meta-link > span { /* Corrected typo 'menu-togged' to 'menu-toggled' */
+body.menu-toggled > .meta-link > span { 
     color: rgb(30, 30, 30);
 }
 
