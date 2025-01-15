@@ -1,8 +1,8 @@
 body {
     height: 100vh;
-    width: 100vh;
+    width: 100vw; /* Changed from 100vh to 100vw to ensure full width */
     background-image: linear-gradient(to bottom right, rgb(31, 37, 49), rgb(92, 92, 119));
-    margin: 0rem;
+    margin: 0;
     overflow: hidden;
 }
 
@@ -12,7 +12,7 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(0%, -50%);
+    transform: translate(-50%, -50%); /* Adjusted translation to center */
     user-select: none;
 }
 
@@ -20,14 +20,14 @@ body {
     width: 40vmin;
     height: 56vmin;
     object-fit: cover;
-    object-position: 1005 center;
+    object-position: center; /* Fixed incorrect value */
 }
 
-body.menu-togged > .meta-link > span {
+body.menu-toggled > .meta-link > span { /* Corrected typo 'menu-togged' to 'menu-toggled' */
     color: rgb(30, 30, 30);
 }
 
-.meta-link{
+.meta-link {
     align-items: center;
     backdrop-filter: blur(3px);
     background-color: rgba(225, 225, 225, 0.05);
@@ -47,7 +47,7 @@ body.menu-togged > .meta-link > span {
 }
 
 .meta-link:hover {
-    background-color:rgba(225, 225, 225, 0.01);
+    background-color: rgba(225, 225, 225, 0.01);
     border: 1px solid rgba(225, 225, 225, 0.02);
 }
 

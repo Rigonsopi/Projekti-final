@@ -1,16 +1,17 @@
-.poppins-regulaar{
-    font-family: "poppins", serif;
+.poppins-regular {
+    font-family: "Poppins", serif;
     font-weight: 400;
     font-style: normal;
 }
-body{
+
+body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
     color: grey;
-    font-family:'Poppins' serif;
+    font-family: 'Poppins', sans-serif; /* Corrected font-family syntax */
 }
 
-h2{
+h2 {
     font-size: 24px;
     text-transform: uppercase;
     color: white;
@@ -18,7 +19,7 @@ h2{
     margin: 30px;
 }
 
-h4{
+h4 {
     font-size: 19px;
     line-height: 1.375em;
     color: grey;
@@ -26,41 +27,41 @@ h4{
     margin-bottom: 30px;
 }
 
-.form-contol{
+.form-control { /* Fixed typo 'form-contol' */
     border-radius: 30px;
 }
 
-.btn{
+.btn {
     background-color: #606270;
     border-radius: 30px;
 }
 
-.jumbotron{
+.jumbotron {
     background-color: #2b2c3c;
     color: #fff;
     padding: 100px 25px;
-    font-family:Montserrat, sans-serif ;
+    font-family: Montserrat, sans-serif;
 }
 
-.container-fluid{
+.container-fluid {
     padding: 60px 50px;
 }
 
-.bg-grey{
+.bg-grey {
     background-color: #656881;
 }
 
-.logo-small{
+.logo-small {
     color: #2b2c3c;
     font-size: 50px;
 }
 
-.logo {
-color: #2b2c3c;
-font-size: 200px;
+.logo { /* Fixed typo from '.log' to '.logo' */
+    color: #2b2c3c;
+    font-size: 200px;
 }
 
-.thumbnail{
+.thumbnail {
     padding: 0 0 15px 0;
     border: none;
     border-radius: 0;
@@ -73,15 +74,15 @@ font-size: 200px;
 }
 
 .carousel-control.right, .carousel-control.left {
-background-image: none;
-color: #2b2c3c;
+    background-image: none;
+    color: #2b2c3c;
 }
 
-.carousel-indicators li{
+.carousel-indicators li {
     border-color: #2b2c3c;
 }
 
-.carousel-indicators li.active{
+.carousel-indicators li.active {
     background-color: #2b2c3c;
 }
 
@@ -103,12 +104,12 @@ color: #2b2c3c;
     transition: box-shadow 0.5s;
 }
 
-.panel:hover{
+.panel:hover {
     box-shadow: 5px 0px 40px grey;
 }
 
-.panel-footer .btn:hover{
-    border: 1px solid color(#2b2c3c);
+.panel-footer .btn:hover {
+    border-color: #2b2c3c; /* Fixed invalid syntax */
     background-color: #fff !important;
     color: #2b2c3c;
 }
@@ -120,11 +121,10 @@ color: #2b2c3c;
     border-bottom: 1px solid transparent;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px; /* Removed redundant border-bottom-left-radius */
 }
 
-.panel-footer{
+.panel-footer {
     background-color: white !important;
 }
 
@@ -144,22 +144,22 @@ color: #2b2c3c;
 }
 
 .navbar {
-margin-bottom: o;
-background-color: #2b2c3c;
-z-index: 9999;
-border: 0;
-font-size: 12px !important;
-line-height: 1.42857143 !important;
-letter-spacing: 4px;
-border-radius: 0;
-font-family: Montserrat, sans-serif;
+    margin-bottom: 0; /* Fixed typo 'o' to '0' */
+    background-color: #2b2c3c;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
 }
 
-.navbar li a, .navbar.navbar-brand{
+.navbar li a, .navbar.navbar-brand {
     color: #fff !important;
 }
 
-.navbar-nav li a:hover, .novbar-nav li.active a {
+.navbar-nav li a:hover, .navbar-nav li.active a { /* Fixed typo 'novbar-nav' to 'navbar-nav' */
     color: #2b2c3c;
     background-color: #fff !important;
 }
@@ -184,7 +184,7 @@ footer .glyphicon {
     -webkit-animation-name: slide;
     animation-duration: 1s;
     -webkit-animation-duration: 1s;
-    animation-direction: normal; /* Correcting the invalid direction */
+    animation-direction: normal; /* Correcting invalid direction */
     visibility: visible;
 }
 
@@ -212,7 +212,7 @@ footer .glyphicon {
 
 @media screen and (max-width: 768px) {
     .col-sm-4 {
-        text-align: center; /* Fixed typo here from 'text-alingn' to 'text-align' */
+        text-align: center; /* Fixed typo from 'text-alingn' to 'text-align' */
         margin: 25px 0;
     }
     .btn-lg {
@@ -222,10 +222,7 @@ footer .glyphicon {
 }
 
 @media screen and (max-width: 480px) {
-    .log {
-        font-size: 150px;
+    .logo {
+        font-size: 150px; /* Fixed typo '.log' to '.logo' */
     }
 }
-
-
-
