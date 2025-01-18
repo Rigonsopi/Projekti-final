@@ -1,5 +1,5 @@
 
-.body {
+body {
     font-family: 'Lato', sans-serif;
     background-color: #f4f4f4;
     margin: 0;
@@ -62,11 +62,12 @@
 }
 
 .h4 {
-    font-size: 19px;
+    font-size: 24px;
     line-height: 1.375em;
-    color: grey;
+    color: rgb(112, 110, 110);
     font-weight: 400;
     margin-bottom: 30px;
+    background-color: #2b2c3c;
 }
 
 .form-control {
