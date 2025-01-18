@@ -3,31 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="slider.css">
+    <title>Slider</title>
+    <link rel="stylesheet" href="/slider.css">
 </head>
 <body>
-
     <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-        <img class="image" src="https://www.apple.com/newsroom/images/2024/09/apple-debuts-iphone-16-pro-and-iphone-16-pro-max/tile/Apple-iPhone-16-Pro-hero-240909-lp.jpg.news_app_ed.jpg" draggable="false" />
-        <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfTyuUmT_ROKCasIMwENneRuvng9UlY6C1YA&s" draggable="false" />
-        <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIRWMOTsA3Nzqm6o9wR5q-YLWo9JYD6qZnxw&s" draggable="false" />
-        <img class="image" src="https://www.apple.com/newsroom/images/2023/09/apple-unveils-iphone-15-pro-and-iphone-15-pro-max/tile/Apple-iPhone-15-Pro-lineup-hero-230912.jpg.landing-big_2x.jpg" draggable="false" />
+        <img class="image" src="https://galerie.eduardogomez.io/content/images/size/w1000/2022/06/howard-bouchevereau-2Q-pPfHZHyo-unsplash_o.jpg" draggable="false" />
+        <img class="image" src="https://i.etsystatic.com/37807868/r/il/b40c6b/5949456771/il_fullxfull.5949456771_1jtl.jpg" draggable="false" />
+        <img class="image" src="https://assets-prd.ignimgs.com/2022/09/12/apple-airpods-pro-2nd-gen-hero-220907-1662579992347-1662989441835.jpg" draggable="false" />
+        <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlYzhj37zAxRWbUVcPT0db_6zqoR_ZGq7e6Q&s" draggable="false" />
         <img class="image" src="https://i.pinimg.com/736x/28/90/31/28903130b9cf5a138a48b7163707bfd1.jpg" draggable="false" />
-        <img class="image" src="https://helios-i.mashable.com/imagery/articles/02EjMY2Tgd8tJurnYztGtGQ/hero-image.fill.size_1248x702.v1668192902.png" draggable="false" />
-        <img class="image" src="https://i.pinimg.com/1200x/46/e8/22/46e8221d9b37fb6e77023660e0c631fb.jpg" draggable="false" />
-        
+        <img class="image" src="https://imageio.forbes.com/specials-images/imageserve/65496ba1379f809520ffebbf/0x0.jpg?format=jpg&height=600&width=1200&fit=bounds" draggable="false" />
+        <img class="image" src="https://www.apple.com/newsroom/images/2023/09/apple-unveils-iphone-15-pro-and-iphone-15-pro-max/tile/Apple-iPhone-15-Pro-lineup-hero-230912.jpg.news_app_ed.jpg" draggable="false" />
     </div>
 
-
-
-    <script>const track = document.getElementById("image-track");
+    <script>
+        const track = document.getElementById("image-track");
 
         const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
 
         const handleOnUp = () => {
             track.dataset.mouseDownAt = "0";
-            track.ataset.prevPercentage = track.dataset.prevPercentage;
+            track.dataset.prevPercentage = track.dataset.prevPercentage;
         }
 
         const handleOnMove = e => {
@@ -38,14 +35,13 @@
 
             const percentage = (mouseDelta / maxDelta) * -100,
                   nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
-                  nextPercentage = Math.max(Marth.min(nextPercentageUnconstrained, 0), -100);
+                  nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
 
             track.dataset.percentage = nextPercentage;
 
             track.animate({
-                transform: translate `translate(${nextPercentage}%, -50%)`
+                transform: `translate(${nextPercentage}%, -50%)`
             }, {duration: 1200, fill: "forwards"});
-
 
             for(const image of track.getElementsByClassName("image")) {
                 image.animate({
@@ -64,9 +60,7 @@
 
         window.onmousemove = e => handleOnMove(e);
 
-        window.onouchmove = e => handleOnMove(e.touches[0]);</script>
-    </div>
-
-
+        window.ontouchmove = e => handleOnMove(e.touches[0]);
+    </script>
 </body>
 </html>

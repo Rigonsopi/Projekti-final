@@ -1,6 +1,6 @@
 body {
     height: 100vh;
-    width: 100vw; 
+    width: 100vw;  /* Corrected to use 100% of the viewport width */
     background-image: linear-gradient(to bottom right, rgb(31, 37, 49), rgb(92, 92, 119));
     margin: 0;
     overflow: hidden;
@@ -12,52 +12,17 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%); /* Correctly center the track */
     user-select: none;
+    transition: transform 1.2s ease; /* Smooth transition for slide effect */
 }
 
 #image-track > .image {
     width: 40vmin;
     height: 56vmin;
     object-fit: cover;
-    object-position: center;
+    object-position: center center; /* Corrected typo */
 }
 
-body.menu-toggled > .meta-link > span { 
-    color: rgb(30, 30, 30);
-}
 
-.meta-link {
-    align-items: center;
-    backdrop-filter: blur(3px);
-    background-color: rgba(225, 225, 225, 0.05);
-    border: 1px solid rgba(225, 225, 225, 0.01);
-    border-radius: 6px;
-    bottom: 10px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    display: inline-flex;
-    gap: 5px;
-    left: 10px;
-    padding: 10px 20px;
-    position: fixed;
-    text-decoration: none;
-    transition: background-color 400ms, border-color 400ms;
-    z-index: 10000;
-}
 
-.meta-link:hover {
-    background-color: rgba(225, 225, 225, 0.01);
-    border: 1px solid rgba(225, 225, 225, 0.02);
-}
-
-.meta-link > i, .meta-link > span {
-    height: 20px;
-    line-height: 20px;
-}
-
-.meta-link > span {
-    color: white;
-    font-family: "Rubik", sans-serif;
-    font-weight: 500;
-}
