@@ -1,6 +1,6 @@
 body {
     height: 100vh;
-    width: 100vw;  /* Corrected to use 100% of the viewport width */
+    width: 100vw; 
     background-image: linear-gradient(to bottom right, rgb(31, 37, 49), rgb(92, 92, 119));
     margin: 0;
     overflow: hidden;
@@ -12,16 +12,16 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); /* Correctly center the track */
+    transform: translate(-50%, -50%); 
     user-select: none;
-    transition: transform 1.2s ease; /* Smooth transition for slide effect */
+    transition: transform 1.2s ease; 
 }
 
 #image-track > .image {
     width: 40vmin;
     height: 56vmin;
     object-fit: cover;
-    object-position: center center; /* Corrected typo */
+    object-position: center center;
 }
 
 

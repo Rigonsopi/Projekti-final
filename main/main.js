@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    // Smooth scrolling for navbar links
     $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
         if (this.hash !== "") {
             event.preventDefault();
@@ -14,7 +13,6 @@ $(document).ready(function() {
         }
     });
 
-    // Slide animation on scroll
     $(window).scroll(function() {
         $(".slideanim").each(function() {
             var pos = $(this).offset().top;
@@ -25,7 +23,6 @@ $(document).ready(function() {
         });
     });
 
-    // Image track interaction (slider drag)
     const track = document.getElementById("image-track");
 
     const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
