@@ -24,5 +24,31 @@ body {
     object-position: center center;
 }
 
+#image-track {
+    display: flex;
+    overflow-x: auto;
+  }
+  
+  .image-item {
+    margin-right: 20px;
+    text-align: center;
+  }
+  
+  .image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
 
 
