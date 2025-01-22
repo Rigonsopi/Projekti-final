@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slider</title>
-    <link rel="stylesheet" href="/slider.css">
+    <link rel="stylesheet" href="slider.css">
 </head>
 <body>
     <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
@@ -70,7 +70,7 @@
         </div>
     
         <div class="image-item">
- //           <img class="image" src="https://i.pinimg.com/1200x/46/e8/22/46e8221d9b37fb6e77023660e0c631fb.jpg" draggable="false" width="400" height="300"/>
+           <img class="image" src="https://i.pinimg.com/1200x/46/e8/22/46e8221d9b37fb6e77023660e0c631fb.jpg" draggable="false" width="400" height="300"/>
             <h2>AirPods Max</h2>
             <p>Size: 187.3 x 168.6 x 83.4 mm <br>
                Material: Stainless steel frame with a soft-touch material coating, memory foam ear cushions, and a mesh canopy <br>
@@ -141,7 +141,6 @@
         </div>
     </div>
     
-
     <script>
         const track = document.getElementById("image-track");
 
@@ -187,5 +186,7 @@
 
         window.ontouchmove = e => handleOnMove(e.touches[0]);
     </script>
+    
+    <script src="slider.js"></script>
 </body>
 </html>
