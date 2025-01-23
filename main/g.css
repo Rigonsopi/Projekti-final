@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d1d0d0;
+    color: #333;
+}
+
+header {
+    background-color: #2b2c3c;
+    color: #6e6d6d;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #6e6d6d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+}
+
+#contact {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #6e6d6d;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact h1 {
+    color: #2b2c3c;
+    text-align: center;
+}
+
+#contact form {
+    margin-top: 1rem;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0 0.25rem;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #6e6d6d;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: #2b2c3c;
+    color: #6e6d6d;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #2b2c3c;
+}
+
+#contact-info {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#contact-info h2 {
+    color: #2b2c3c;
+}
+
+footer {
+    background-color: #2b2c3c;
+    color: #6e6d6d;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}

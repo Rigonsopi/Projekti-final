@@ -23,7 +23,7 @@ body {
 }
 
 .image-item {
-  background-color: lightgrey;
+  background-color: rgb(182, 179, 179);
   border-radius: 10px;
   padding: 20px;
   display: flex;
@@ -70,3 +70,4 @@ p {
       width: 100%;
   }
 }
+
