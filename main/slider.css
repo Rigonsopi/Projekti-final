@@ -11,27 +11,25 @@ body {
 #image-track {
   display: flex;
   gap: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  overflow: hidden;
+  overflow-x: auto; 
   white-space: nowrap;
   padding: 20px;
   box-sizing: border-box;
+  scroll-snap-type: x mandatory; 
 }
 
 .image-item {
   background-color: rgb(182, 179, 179);
   border-radius: 10px;
   padding: 20px;
+  flex: 0 0 auto; 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  scroll-snap-align: center;
 }
 
 .image {
@@ -60,14 +58,14 @@ p {
 
 @media (max-width: 768px) {
   #image-track {
-      flex-direction: column;
-      width: 100%;
-      transform: translate(-50%, 0);
+    flex-direction: row;
+    width: 100%;
+    overflow-x: auto; 
   }
 
   .image-item {
-      margin-bottom: 20px;
-      width: 100%;
+    margin-bottom: 20px;
+    flex: 0 0 80%; 
   }
 }
 
